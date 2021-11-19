@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<title>AaT Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/styles.css" rel="stylesheet" />
+<link href="https://fonts.cdnfonts.com/css/sweet-story" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Yellowtail" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://open.spotify.com/artist/71wwzYjBMuskYZsT7bNNrp?si=Kx9NG0hkQDmOmQmHvN8pBw&utm_source=copy-link&nd=1" class="float1" target="_blank">
+  <i class="fa fa-spotify my-float1"></i>
+</a>
+
+<a href="https://www.instagram.com/primerafilaok" class="float2" target="_blank">
+  <i class="fa fa-instagram my-float2"></i>
+</a>
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+body {font: 1em "Helvetica Neue", Helvetica, Arial, sans-serif;padding: 80px 0 0 0}
+a,a:hover {text-decoration: none}
+/* stile per la demo */ 
+.container { display: block; width: 50%; margin: 0 auto; }
+
+/* general style (questi sono gli stili che possono essere utilizzati da tutti i bottoni, così eviti di scrivere troppe linee inutili di codice) */
+.radius {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-background-clip: padding-box;
+}
+.gradient {
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.1)));
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
+    background-image: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
+}
+.shadow {
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+.trendy_btn {
+    display: block;
+    margin: 20px;
+    padding: 18px;
+    text-align: center;
+    -o-transition: .4s;
+    -ms-transition: .4s;
+    -moz-transition: .4s;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+span.txt { display: block; position: relative; z-index: 2; }
+
+/* code button ONE (like LV) */
+a.button_one { position: relative; overflow: hidden; width: 260px; font-size: 1.4em; letter-spacing: 2px; background-color: #46352b; color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,0.7); }
+a.button_one:hover { background-color: #31251e; }
+a.button_one:active { top: 1px;
+-o-transition: none;
+-ms-transition: none;
+-moz-transition: none;
+-webkit-transition: none;
+transition: none;
+}
+a.button_one:before { 
+    display: inline-block; position: absolute; z-index: 1; width: 520px; top: -100%; left: -5%; font-family: Georgia, serif; font-size: 1em; content: 'LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV LV'; color: #846843;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.6);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+a.button_one span.txt:before { display: inline-block; margin: 0 10px 0 0; font-family: 'fontello'; content: '\1f45c'; color: #fff; }
+/* code button TWO (like Lover) */
+a.button_two { position: relative; overflow: hidden; width: 260px; font-size: 1.4em; font-weight: 700; background-color: #b52122; color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,0.7); }
+a.button_two:hover { background-color: #d33031; }
+a.button_two:active { top: 1px;
+-o-transition: none;
+-ms-transition: none;
+-moz-transition: none;
+-webkit-transition: none;
+transition: none;
+}
+a.button_two:before { 
+display: inline-block; position: absolute; z-index: 1; width: 320px; top: -50%; left: -5%; font-size: 1.375em; font-family: 'fontello'; content: '\2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665  \2665'; color: #8c1f20;
+text-shadow: none;
+-webkit-transform: rotate(-10deg);
+-moz-transform: rotate(-10deg);
+-o-transform: rotate(-10deg);
+-ms-transform: rotate(-10deg);
+transform: rotate(-10deg);
+}
+a.button_two span.txt:before { display: inline-block; margin: 0 10px 0 0; font-family: 'fontello'; content: '\2665'; color: #fff; }
+/* code button THREE (like Mail) */
+a.button_three { position: relative; overflow: hidden; width: 260px; font-size: 1.4em; font-weight: 700; background-color: #007bc5; color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,0.7); }
+a.button_three:hover { background-color: #0086d6; }
+a.button_three:active { top: 1px;
+-o-transition: none;
+-ms-transition: none;
+-moz-transition: none;
+-webkit-transition: none;
+transition: none;
+}
+a.button_three:before { display: inline-block; width: 360px; position: absolute; z-index: 1; top: -30%; left: -5%; font-size: 1.145em; letter-spacing: 10px; line-height: 1.6em; font-family: 'fontello'; content: '\5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d  \5d'; color: #0041a5;
+text-shadow: none;
+-webkit-transform: rotate(-10deg);
+-moz-transform: rotate(-10deg);
+-o-transform: rotate(-10deg);
+-ms-transform: rotate(-10deg);
+transform: rotate(-10deg);
+}
+a.button_three span.txt:before { display: inline-block; margin: 0 10px 0 0; font-family: 'fontello'; content: '\e79b'; color: #fff; }
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.image2 {
+  position: relative;
+  top: -350px;
+  z-index: 1;
+  opacity: 50%;
+}
+
+.float1{
+	position:fixed;
+	width:60px;
+	height:60px; 
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float1{
+  margin-top:16px;
+  color: white;
+}
+
+.float2{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:120px;
+	right:40px;
+	background-color: #0088cc;
+	color: #FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float2{
+  margin-top:16px;
+  color: white;
+}
+
+</style>
+
+<body style="background-color: black;">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">PORTADA</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <a href="letras.html"><button class="w3-padding-large w3-button uppercase" title="More">LETRAS <i class="fa fa-caret-down"></i></button></a>     
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="l1.html" class="w3-bar-item w3-button">Huellas</a>
+      <a href="l2.html" class="w3-bar-item w3-button">La sra Bixby y el abrigo del coronel</a>
+      <a href="l3.html" class="w3-bar-item w3-button">Sin luz</a>
+      <a href="l4.html" class="w3-bar-item w3-button">Siluetas</a>
+      <a href="l5.html" class="w3-bar-item w3-button">Yimmy yimmi</a>
+      <a href="l6.html" class="w3-bar-item w3-button">El espíritu del sol</a>
+      <a href="l7.html" class="w3-bar-item w3-button">Las patas de la cama</a>
+      <a href="l8.html" class="w3-bar-item w3-button">Hipnótica</a>
+    </div>
+  </div>
+    <a href="ficha.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small nav-link js-scroll-trigger">FICHA TÉCNICA</a>
+    <a href="index.html#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small js-scroll-trigger">PRIMERA FILA</a>
+    <a href="index.html#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small js-scroll-trigger">TRASTIENDA</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACTO</a>
+  </div>
+</div>
+
+<divclass="parent" style="text-align: center; color: white; font-weight: bold;">
+    <div class="image1">
+    <div style="font-size: xx-large;" >
+    MUSICOS: </span><br>
+    </div>
+GUITARRA: Rodrigo PAN</span><br>
+BAJO: Gustavo IARLORI</span><br>
+BATERIA: Diego HERRERA</span><br>
+Saxo Alto: Pablo CAMINITTI</span><br>
+GUITARRA Y VIOLIN: Victor CLAVERIE</span><br>
+COROS: Camila MALVASO</span><br>
+TECLADOS: Gastón RAMOS</span><br>
+TECLADO Y VOZ: Eduardo MALVASO  </span><br>
+</span><br>
+STAFF: </span><br>
+PRODUCTOR: Hernán DEMICHELIS</span><br>
+ARTE Y DISEÑO: Mery ZERRA</span><br>
+REDES: Juani y Pauli DENOYA</span><br>
+ASISTENTES:	Facundo HERRERA</span><br>
+		Mateo MALVASO</span><br>
+		Lautaro RAMOS</span><br>
+
+</div>
+
+<img class="image2" src="instrumento4.png" />
+
+</div>
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div class="container">
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="ficha.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FICHA TÉCNICA </a>
+        <a href="index.html#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRIMERA FILA</a>
+        <a href="index.html#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TRASTIENDA</a>
+        <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACTO</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LETRAS </a>
+    </div>
+</div>
+
+
+
+</div>
+
+<!-- Image of location/map 
+<img src="/img/band/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+-->
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a style="margin-right: 10px;" href="https://www.instagram.com/primerafilaok/" target="_blank" ><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a style="margin-right: 10px;" href="https://open.spotify.com/artist/71wwzYjBMuskYZsT7bNNrp?si=Kx9NG0hkQDmOmQmHvN8pBw&utm_source=copy-link&nd=1" target="_blank" ><i class="fa fa-spotify w3-hover-opacity"></i></a>
+  <a href="https://www.youtube.com/channel/UCfdxWWVbor_hX4Iaq6oO9aQ" target="_blank"><i class="fa fa-youtube w3-hover-opacity" class="text-blue" target="_blanck"></i></a>
+  <p class="w3-medium">Desarrollado por <a href="https://www.atalltimes.com.ar" target="_blank">AtAllTimes</a></p>
+</footer>
+
+
+</body>
+</html>
