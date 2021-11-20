@@ -10,13 +10,13 @@
 <link href="https://fonts.cdnfonts.com/css/sweet-story" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Yellowtail" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://open.spotify.com/artist/71wwzYjBMuskYZsT7bNNrp?si=Kx9NG0hkQDmOmQmHvN8pBw&utm_source=copy-link&nd=1" class="float1" target="_blank">
-  <i class="fa fa-spotify my-float1"></i>
-</a>
 
-<a href="https://www.instagram.com/primerafilaok" class="float2" target="_blank">
-  <i class="fa fa-instagram my-float2"></i>
-</a>
+<link href="https://fonts.cdnfonts.com/css/sweet-story" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Yellowtail" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
 
 <style>
 body {font-family: "Lato", sans-serif}
@@ -120,24 +120,6 @@ transform: rotate(-10deg);
 }
 a.button_three span.txt:before { display: inline-block; margin: 0 10px 0 0; font-family: 'fontello'; content: '\e79b'; color: #fff; }
 
-.parent {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-.image1 {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-.image2 {
-  position: relative;
-  top: -350px;
-  z-index: 1;
-  opacity: 50%;
-}
-
 .float1{
 	position:fixed;
 	width:60px;
@@ -178,9 +160,35 @@ a.button_three span.txt:before { display: inline-block; margin: 0 10px 0 0; font
   color: white;
 }
 
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.image2 {
+  position: relative;
+  top: -350px;
+  z-index: 1;
+  opacity: 50%;
+}
+
 </style>
 <body style="background-color: black; margin-bottom: -20%;">
 
+  <a href="https://open.spotify.com/artist/71wwzYjBMuskYZsT7bNNrp?si=Kx9NG0hkQDmOmQmHvN8pBw&utm_source=copy-link&nd=1" class="float1" target="_blank">
+    <i class="fa fa-spotify my-float1"></i>
+  </a>
+  
+  <a href="https://www.instagram.com/primerafilaok" class="float2" target="_blank">
+    <i class="fa fa-instagram my-float2"></i>
+  </a>
+</div>
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
@@ -200,9 +208,10 @@ a.button_three span.txt:before { display: inline-block; margin: 0 10px 0 0; font
         </div>
       </div>  
       <a href="ficha.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small nav-link js-scroll-trigger">FICHA TÉCNICA</a>
+      <a href="galery.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small nav-link js-scroll-trigger">GALERÍA</a>
 
     <a href="index.html#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small js-scroll-trigger">PRIMERA FILA</a>
-    <a href="index.html#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small js-scroll-trigger">TRASTIENDA</a>
+    <a href="index.html#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small js-scroll-trigger">SHOWS</a>
     <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACTO</a>
   </div>
 </div>
@@ -236,15 +245,17 @@ a.button_three span.txt:before { display: inline-block; margin: 0 10px 0 0; font
     Solo tu alma flotara y llegara hasta aquí para decirme</span><br><span jsname="YS01Ge">
     Ya estoy mejor….</span><br><span jsname="YS01Ge">
   </div>
-  <img class="image2" src="instrumento1.png" />  
+  <img class="image2" style="max-width: 100%; height: auto; width: auto\9; /* ie8 */" src="instrumento1.png" />
 </div>
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div class="container">
     <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
       <a href="ficha.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FICHA TÉCNICA </a> 
+      <a href="galery.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GALERÍA </a>
+
       <a href="index.html#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRIMERA FILA</a>
-        <a href="index.html#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TRASTIENDA</a>
+        <a href="index.html#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SHOWS</a>
         <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACTO</a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LETRAS </a>
     </div>
@@ -252,16 +263,9 @@ a.button_three span.txt:before { display: inline-block; margin: 0 10px 0 0; font
 
 
 
-</div>
-
-<!-- Image of location/map 
-<img src="/img/band/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
--->
-
 
 <!-- Footer -->
-<footer style="margin-top: -30%;" class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge"">
-  <a href="ficha.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FICHA TÉCNICA </a>
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge"">
   <a style="margin-right: 10px;" href="https://www.instagram.com/primerafilaok/" target="_blank" ><i class="fa fa-instagram w3-hover-opacity"></i></a>
   <a style="margin-right: 10px;" href="https://open.spotify.com/artist/71wwzYjBMuskYZsT7bNNrp?si=Kx9NG0hkQDmOmQmHvN8pBw&utm_source=copy-link&nd=1" target="_blank" ><i class="fa fa-spotify w3-hover-opacity"></i></a>
   <a href="https://www.youtube.com/channel/UCfdxWWVbor_hX4Iaq6oO9aQ" target="_blank"><i class="fa fa-youtube w3-hover-opacity" class="text-blue" target="_blanck"></i></a>
