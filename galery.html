@@ -178,9 +178,55 @@ a.button_three span.txt:before { display: inline-block; margin: 0 10px 0 0; font
   color: white;
 }
 
-</style>
+div.gallery {
+  border: 1px solid #ccc;
+}
 
-<body style="background-color: black;">
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+<body style="background-color: black; margin-bottom: -20%;">
 
 <!-- Navbar -->
 <div class="w3-top">
@@ -189,76 +235,127 @@ a.button_three span.txt:before { display: inline-block; margin: 0 10px 0 0; font
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large">PORTADA</a>
     <div class="w3-dropdown-hover w3-hide-small">
       <a href="letras.html"><button class="w3-padding-large w3-button uppercase" title="More">LETRAS <i class="fa fa-caret-down"></i></button></a>     
-    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-      <a href="l1.html" class="w3-bar-item w3-button">Huellas</a>
-      <a href="l2.html" class="w3-bar-item w3-button">La sra Bixby y el abrigo del coronel</a>
-      <a href="l3.html" class="w3-bar-item w3-button">Sin luz</a>
-      <a href="l4.html" class="w3-bar-item w3-button">Siluetas</a>
-      <a href="l5.html" class="w3-bar-item w3-button">Yimmy yimmi</a>
-      <a href="l6.html" class="w3-bar-item w3-button">El espíritu del sol</a>
-      <a href="l7.html" class="w3-bar-item w3-button">Las patas de la cama</a>
-      <a href="l8.html" class="w3-bar-item w3-button">Hipnótica</a>
-    </div>
-  </div>
-    <a href="ficha.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small nav-link js-scroll-trigger">FICHA TÉCNICA</a>
-    <a href="galery.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small nav-link js-scroll-trigger">GALERÍA</a>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="l1.html" class="w3-bar-item w3-button">Huellas</a>
+          <a href="l2.html" class="w3-bar-item w3-button">La sra Bixby y el abrigo del coronel</a>
+          <a href="l3.html" class="w3-bar-item w3-button">Sin luz</a>
+          <a href="l4.html" class="w3-bar-item w3-button">Siluetas</a>
+          <a href="l5.html" class="w3-bar-item w3-button">Yimmy yimmi</a>
+          <a href="l6.html" class="w3-bar-item w3-button">El espíritu del sol</a>
+          <a href="l7.html" class="w3-bar-item w3-button">Las patas de la cama</a>
+          <a href="l8.html" class="w3-bar-item w3-button">Hipnótica</a>
+        </div>
+      </div>  
+      <a href="ficha.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small nav-link js-scroll-trigger">FICHA TÉCNICA</a>
+      <a href="galery.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small nav-link js-scroll-trigger">GALERÍA</a>
     <a href="index.html#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small js-scroll-trigger">PRIMERA FILA</a>
     <a href="index.html#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small js-scroll-trigger">SHOWS</a>
     <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACTO</a>
   </div>
 </div>
 
-<divclass="parent" style="text-align: center; color: white; font-weight: bold;">
-    <div class="image1">
-    <div style="font-size: xx-large;" >
-    MUSICOS: </span><br>
-    </div>
-GUITARRA: Rodrigo PAN</span><br>
-BAJO: Gustavo IARLORI</span><br>
-BATERIA: Diego HERRERA</span><br>
-Saxo Alto: Pablo CAMINITTI</span><br>
-GUITARRA Y VIOLIN: Victor CLAVERIE</span><br>
-COROS: Camila MALVASO</span><br>
-TECLADOS: Gastón RAMOS</span><br>
-TECLADO Y VOZ: Eduardo MALVASO  </span><br>
-</span><br>
-STAFF: </span><br>
-PRODUCTOR: Hernán DEMICHELIS</span><br>
-ARTE Y DISEÑO: Mery ZERRA</span><br>
-REDES: Juani y Pauli DENOYA</span><br>
-ASISTENTES:	Facundo HERRERA</span><br>
-		Mateo MALVASO</span><br>
-		Lautaro RAMOS</span><br>
 
-</div>
-
-<img class="image2" src="instrumento4.png" />
-
-</div>
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div class="container">
     <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-        <a href="ficha.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FICHA TÉCNICA </a>
-         <a href="galery.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GALERÍA </a>
+      <a href="ficha.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FICHA TÉCNICA </a>
+      <a href="galery.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GALERÍA </a>
 
-        <a href="index.html#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRIMERA FILA</a>
+      <a href="index.html#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRIMERA FILA</a>
         <a href="index.html#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SHOWS</a>
         <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACTO</a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LETRAS </a>
     </div>
 </div>
 
+<h2 style="color: white;">Galería de Primera Fila</h2>
 
-
+<div class="responsive">
+  <div class="gallery">
+      <img src="concierto2.jpg" alt="Mountains" width="600" height="400">
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+      <img src="concierto3.jpg" alt="Mountains" width="600" height="400">
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+      <img src="int4.jpg" alt="Cinque Terre" width="600" height="400">
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+      <img src="int5.jpg" alt="Forest" width="600" height="400">
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+      <img src="int6.jpg" alt="Northern Lights" width="600" height="400">
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+      <img src="int1.jpg" alt="Mountains" width="600" height="400">
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+      <img src="int2.jpg" alt="Mountains" width="600" height="400">
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+      <img src="int3.jpg" alt="Mountains" width="600" height="400">
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+      <img src="int7.jpeg" alt="Mountains" width="600" height="400">
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+      <img src="int8.jpeg" alt="Mountains" width="600" height="400">
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+      <img src="pf1.jpg" alt="Cinque Terre" width="600" height="400">
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+      <img src="pf2.jpg" alt="Forest" width="600" height="400">
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+      <img src="pf3.jpg" alt="Northern Lights" width="600" height="400">
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+      <img src="pf4.jpg" alt="Mountains" width="600" height="400">
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+      <img src="concierto.jpg" alt="Mountains" width="600" height="400">
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+      <img src="int3.jpg" alt="Mountains" width="600" height="400">
+  </div>
 </div>
 
-<!-- Image of location/map 
-<img src="/img/band/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
--->
 
+<div class="clearfix" style="margin-bottom: 500px;"></div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+<footer style="margin-top: -30%;" class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge"">
   <a style="margin-right: 10px;" href="https://www.instagram.com/primerafilaok/" target="_blank" ><i class="fa fa-instagram w3-hover-opacity"></i></a>
   <a style="margin-right: 10px;" href="https://open.spotify.com/artist/71wwzYjBMuskYZsT7bNNrp?si=Kx9NG0hkQDmOmQmHvN8pBw&utm_source=copy-link&nd=1" target="_blank" ><i class="fa fa-spotify w3-hover-opacity"></i></a>
   <a href="https://www.youtube.com/channel/UCfdxWWVbor_hX4Iaq6oO9aQ" target="_blank"><i class="fa fa-youtube w3-hover-opacity" class="text-blue" target="_blanck"></i></a>
